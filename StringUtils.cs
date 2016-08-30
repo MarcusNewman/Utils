@@ -8,5 +8,9 @@ namespace Utils
 {
     public class StringUtils
     {
+        public static string Pluralize(string a, bool b)
+        {
+            return "";
+        }
     }
 }
