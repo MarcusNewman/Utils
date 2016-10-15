@@ -8,15 +8,15 @@ namespace Utils.UnitTests
     [TestClass]
     public class UtilsBaseUnitTest
     {
-        [TestMethod]
-        public void UtilsAssemblyShouldExist()
-        {
-            GetAssembly();
-        }
-
         public Assembly GetAssembly()
         {
             return ReflectionAssert.AssemblyExists("Utils.dll");
-        }       
+        }
+
+        public Type GetClass()
+        {
+            var assembly = GetAssembly();
+            return assembly.TypeExists("Utils", "StringUtils");
+        }
     }
 }

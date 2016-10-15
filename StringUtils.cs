@@ -8,9 +8,9 @@ namespace Utils
 {
     public class StringUtils
     {
-        public static string Pluralize(string a, bool b)
+        public static string Pluralize(int number, string word)
         {
-            return "";
+            return string.Format("{0} {1}{2}", number, word, number > 1 ? "s" : "");
         }
     }
 }

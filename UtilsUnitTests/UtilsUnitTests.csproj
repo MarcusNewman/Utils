@@ -56,6 +56,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="PluralizeUnitTests.cs" />
     <Compile Include="StringUtilsUnitTests.cs" />
     <Compile Include="UtilsBaseUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
